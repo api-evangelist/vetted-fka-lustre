@@ -1,8 +1,27 @@
 aid: vetted-fka-lustre
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vetted-fka-lustre.png
 name: Vetted (FKA Lustre)
-description: Vetted (FKA Lustre) is a company surfaced as a portfolio company of insight-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Vetted (legally Parli, Inc.; formerly Lustre) is a San Francisco-based consumer
+  AI shopping agent founded in 2019. It analyzes product reviews and expert content
+  across the web and compares prices across retailers such as Amazon, Walmart, and
+  Best Buy to help shoppers find high-quality products at the best price. Vetted
+  ships as an iOS app, Android app, macOS app, and Chrome extension, and reports
+  more than 370,000 shoppers. The company rebranded from Lustre to Vetted alongside
+  a $14M Series A led by Insight Partners in August 2022. Vetted is a consumer
+  product and does not publish a public developer API, OpenAPI, SDK, or developer
+  portal; its api.vetted.ai backend is a private, auth-gated app service.
 url: https://raw.githubusercontent.com/api-evangelist/vetted-fka-lustre/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- Shopping
+- E-commerce
+- Consumer
+- Product Discovery
+- Price Comparison
+- Reviews
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +50,22 @@ maintainers:
 common:
 - type: Website
   url: https://vetted.ai/
+- type: PrivacyPolicy
+  url: https://join.vetted.ai/privacy
+- type: TermsOfService
+  url: https://join.vetted.ai/terms
+- type: LinkedIn
+  url: https://www.linkedin.com/company/vetted-ai
+- type: iOSApp
+  url: https://apps.apple.com/us/app/vetted-ai-your-shopping-agent/id1536986641
+- type: AndroidApp
+  url: https://play.google.com/store/apps/details?id=ai.vetted.vettedmobile
+- type: ChromeExtension
+  url: https://chromewebstore.google.com/detail/vetted-ai-your-shopping-a/cjmfiochlaffhnellbhffgnjocahinnh
+- type: DomainSecurity
+  url: security/vetted-fka-lustre-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1

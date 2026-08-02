@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts + discovered app-backend host
+hosts:
+- host: vetted.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 29 11:15:14 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: api.vetted.ai
+  https: true
+  http2: true
+  hsts: true
+  hsts_max_age: 31536000
+  hsts_include_subdomains: true
+  note: >-
+    Private app-backend behind Cloudflare. Root returns an 8-byte placeholder;
+    /api-docs and /api/v1 return 403 (auth-gated). No public OpenAPI/Swagger/GraphQL
+    or developer docs are exposed. CORS is wide-open (access-control-allow-origin: *)
+    and auth is header-based (Authorization, X-Session-ID).
+domains:
+- domain: vetted.ai
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
