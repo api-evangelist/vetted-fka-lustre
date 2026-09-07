@@ -89,3 +89,5 @@ x-enrichment:
   status: nochange
   artifacts_added: 0
   pass: local-v1
+x-parent: vetted
+x-relationship: product
